@@ -1,0 +1,36 @@
+#buttons {
+  display: grid;
+  grid-template-areas: "clr clr mod div" "btn btn btn mul" "btn btn btn sub" "btn btn btn add" "nil nil dot clc";
+}
+
+#clr {
+  grid-area: clr;
+}
+
+#mod {
+  grid-area: mod;
+}
+
+#mul {
+  grid-area: mul;
+}
+
+#div {
+  grid-area: div;
+}
+
+#sub {
+  grid-area: sub;
+}
+
+#add {
+  grid-area: add;
+}
+
+#dot {
+  grid-area: dot;
+}
+
+#num0 {
+  grid-area: nil;
+}
