@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <script src="form.js" defer></script>
+  <title>Patient Form</title>
+</head>
+
+<body>
+  <form class="container my-5 px-4 py-3 card">
+    <div class="d-flex justify-content-between">
+      <div>
+        <h1>Patient Form</h1>
+        <h2 id="greeting">Welcome, Guest!</h2>
+      </div>
+      <div>
+        <a href="index.html" class="btn btn-secondary">Logout</a>
+      </div>
+    </div>
+    <div class="row mb-3">
+      <div class="col">
+        <label for="first-name" class="form-label">First Name*</label>
+        <input type="text" name="first-name" id="first-name" required class="form-control"
+          pattern="^[A-z][A-z -]*[A-z]$">
+      </div>
+      <div class="col">
+        <label for="middle-name" class="form-label">Middle name</label>
+        <input type="text" name="middle-name" id="middle-name" class="form-control" pattern="^[A-z][A-z -]*[A-z]$">
+      </div>
+      <div class="col">
+        <label for="last-name" class="form-label">Last Name*</label>
+        <input type="text" name="last-name" id="last-name" required class="form-control" pattern="^[A-z][A-z -]*[A-z]$">
+      </div>
+    </div>
+    <div class="row mb-3">
+      <div class="col">
+        <label for="address" class="form-label">Address*</label>
+        <input type="text" name="address" id="address" required class="form-control">
+      </div>
+    </div>
+    <div class="row mb-3">
+      <div class="col">
+        <label for="birthdate" class="form-label">Birthdate*</label>
+        <input type="date" name="birthdate" id="birthdate" required class="form-control">
+      </div>
+      <div class="col">
+        <label for="contact" class="form-label">Contact Number*</label>
+        <input type="tel" name="contact" id="contact" required class="form-control" placeholder="(eg: 0917-1234-567)"
+          autocomplete="off" pattern="^(?:\+\d{5}|\d{4})-?\d{3}-?\d{4}$">
+      </div>
+      <div class="col">
+        <label for="gender">Gender:*</label>
+        <div class="form-check">
+          <input type="radio" name="gender" id="male" class="form-check-input" required>
+          <label for="male" class="form-check-label">Male</label>
+        </div>
+        <div class="form-check">
+          <input type="radio" name="gender" id="female" class="form-check-input" required>
+          <label for="female" class="form-check-label">Female</label>
+        </div>
+      </div>
+    </div>
+    <div class="row mb-3">
+      <div class="col">
+        <label for="history">Medical History:</label>
+      </div>
+      <div class="col">
+        <div class="form-check">
+          <input type="checkbox" name="history" id="asthma" value="Asthma" class="form-check-input">
+          <label for="asthma" class="form-check-label">Asthma</label>
+        </div>
+        <div class="form-check">
+          <input type="checkbox" name="history" id="cancer" value="Cancer" class="form-check-input">
+          <label for="cancer" class="form-check-label">Cancer</label>
+        </div>
+        <div class="form-check">
+          <input type="checkbox" name="history" id="cardiac" value="Cardiac Disease" class="form-check-input">
+          <label for="cardiac" class="form-check-label">Cardiac Disease</label>
+        </div>
+        <div class="form-check">
+          <input type="checkbox" name="history" id="diabetes" value="Diabetes" class="form-check-input">
+          <label for="diabetes" class="form-check-label">Diabetes</label>
+        </div>
+      </div>
+      <div class="col">
+        <div class="form-check">
+          <input type="checkbox" name="history" id="hypertension" value="Hypertension" class="form-check-input">
+          <label for="hypertension">Hypertension</label>
+        </div>
+        <div class="form-check">
+          <input type="checkbox" name="history" id="psychiatric" value="Psychiatric Disorder" class="form-check-input">
+          <label for="psychiatric">Psychiatric Disorder</label>
+        </div>
+        <div class="form-check">
+          <input type="checkbox" name="history" id="epilepsy" value="Epilepsy" class="form-check-input">
+          <label for="epilepsy">Epilepsy</label>
+        </div>
+        <div class="form-check">
+          <input type="checkbox" name="history" id="others" value="Others" class="form-check-input">
+          <label for="others">Others</label>
+        </div>
+      </div>
+    </div>
+    <div class="row mb-3">
+      <div class="col">
+        <label for="current" class="form-label">Current Symptoms:</label>
+      </div>
+      <div class="col">
+        <select name="symptoms" id="symptoms" multiple class="form-select">
+          <option value="chest_pain">Chest pain</option>
+          <option value="respirator">Respiratory</option>
+          <option value="hematological">Hematological</option>
+          <option value="lymphatic">Lymphatic</option>
+          <option value="neurological">Neurological</option>
+          <option value="psychiatric">Psychiatric Disorder</option>
+          <option value="gastrointestinal">Gastrointestinal</option>
+          <option value="weight_loss">Weight Loss</option>
+        </select>
+      </div>
+      <div class="col-5">
+        <label for="medication" class="form-label">Are you currently taking medication?</label>
+        <div class="form-check-inline">
+          <input type="radio" name="medication" id="medication-yes" value="1" class="form-check-input">
+          <label for="medication-yes" class="form-check-label">Yes</label>
+        </div>
+        <div class="form-check-inline">
+          <input type="radio" name="medication" id="medication-no" value="0" class="form-check-input" checked>
+          <label for="medication-no" class="form-check-label">No</label>
+        </div>
+        <input type="text" class="form-control mt-3" name="medications" id="medications" disabled>
+      </div>
+    </div>
+    <div class="d-flex gap-2 flex-row justify-content-end">
+      <input type="reset" value="Reset" class="btn btn-outline-primary">
+      <input type="submit" value="Submit" class="btn btn-primary">
+    </div>
+  </form>
+</body>
+
+</html>
