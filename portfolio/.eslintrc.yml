@@ -1,0 +1,18 @@
+---
+root: true
+env:
+  browser: true
+plugins:
+  - "react"
+extends:
+  - "@chookslint/typescript"
+  - "plugin:react/recommended"
+parserOptions:
+  project: ./tsconfig.eslint.json
+  ecmaFeatures:
+    jsx: true
+rules:
+  "react/react-in-jsx-scope": off
+  "@typescript-eslint/naming-convention": off
+  func-style: off
+  sort-imports: off
