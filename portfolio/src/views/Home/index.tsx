@@ -1,6 +1,6 @@
 import './index.scss';
 import Typography from '@mui/material/Typography';
-import { icons } from '../../components/Icons';
+import * as Icons from '../../components/Icons';
 
 function Home() {
   return <main className="Home">
@@ -21,13 +21,13 @@ function Home() {
           Frontend
         </Typography>
         <span className="TechList">
-          {icons.javascript}
-          {icons.typescript}
-          {icons.html5}
-          {icons.css3}
-          {icons.sass}
-          {icons.react}
-          {icons.vue}
+          {Icons.JavaScript}
+          {Icons.TypeScript}
+          {Icons.HTML5}
+          {Icons.CSS3}
+          {Icons.Sass}
+          {Icons.ReactJS}
+          {Icons.VueJS}
         </span>
       </section>
       <section className="TechStack">
@@ -35,17 +35,15 @@ function Home() {
           Backend
         </Typography>
         <span className="TechList">
-          {icons.nodejs}
-          {icons.javascript}
-          {icons.typescript}
-          {icons.swc}
-          {icons.nginx}
-          {icons.ubuntu}
-          {icons.mongodb}
-          {icons.graphql}
-          {icons.discord}
-          {icons.youtube}
-          {icons.gcp}
+          {Icons.NodeJS}
+          {Icons.JavaScript}
+          {Icons.TypeScript}
+          {Icons.Swc}
+          {Icons.Nginx}
+          {Icons.Ubuntu}
+          {Icons.MongoDB}
+          {Icons.GraphQL}
+          {Icons.GCP}
         </span>
       </section>
     </article>
