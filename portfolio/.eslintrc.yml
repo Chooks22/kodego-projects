@@ -12,6 +12,7 @@ parserOptions:
   ecmaFeatures:
     jsx: true
 rules:
+  "react/prop-types": off
   "react/react-in-jsx-scope": off
   "@typescript-eslint/naming-convention": off
   func-style: off
